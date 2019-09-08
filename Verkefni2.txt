@@ -73,12 +73,20 @@ donuts.forEach(function(donut) {
 });
 
 8. Eru öll eigindi (e. properties) í sömu röð og þeim var bætt í object, rökstuddu?
+
+Nei, eigindi eru ekki alltaf í sömu röð og þau eru sett inn, bara array heldur röð.
+
 9. Útskýrðu hvað eftirfarandi kóði gerir.
 let user = { name: "John" };
 let admin = user;
+
+admin er pointer á objectið user, þegar ég breyti einhverju í user eða admin sést það sýni hina breytuna í console.
+
 10. Afhverju virkar eftirfarandi?
 const user = {
  name: "John"
 };
 user.age = 25;
 alert(user.age); // 25
+
+const með object stöðvar þig bara frá því að láta breytuna benda á annað object eða breyta týpunni, það stöðvar þig ekki frá því að breyta hvað er í objectinu.
